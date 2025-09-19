@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO Sitemap & Blog Ping Tool</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <div class="max-w-2xl mx-auto mt-16 bg-white shadow-lg rounded-xl p-8">
+    <h1 class="text-3xl font-bold text-center mb-6">SEO Ping Tool</h1>
+    <p class="text-center mb-6 text-gray-600">Ping your website to search engines & blog networks for faster indexing</p>
+
+    <form action="ping.php" method="POST" class="space-y-6">
+      <!-- Sitemap Ping -->
+      <div>
+        <label for="url" class="block font-semibold">Enter Sitemap or Page URL:</label>
+        <input type="url" id="url" name="url" required placeholder="https://example.com/sitemap.xml" class="w-full p-3 border rounded-lg">
+      </div>
+
+      <!-- Blog Ping -->
+      <div>
+        <label for="blogName" class="block font-semibold">Blog Name:</label>
+        <input type="text" id="blogName" name="blogName" required placeholder="My Awesome Blog" class="w-full p-3 border rounded-lg">
+
+        <label for="blogUrl" class="block font-semibold mt-4">Blog Homepage URL:</label>
+        <input type="url" id="blogUrl" name="blogUrl" required placeholder="https://example.com/" class="w-full p-3 border rounded-lg">
+      </div>
+
+      <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 rounded-lg transition">
+        Ping Now 🚀
+      </button>
+    </form>
+  </div>
+
+</body>
+</html>
